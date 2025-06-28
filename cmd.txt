@@ -42,6 +42,11 @@ git reset HEAD filename // unstage a staged file
 git reset --hard HEAD // remove all uncommitted changes
 git revert <commit> // undo a commit (safe way)
 
+git tag // list tags
+git tag v1.0 // create tag named v1.0
+git push origin v1.0 // push tag to remote
+
 git show <commit> // show details of a specific commit
 git blame filename // show who last modified each line
 git clean -fd // remove untracked files/directories
+

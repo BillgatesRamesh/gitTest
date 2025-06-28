@@ -1,0 +1,52 @@
+git config --global user.name "Your Name" // set your Git username
+git config --global user.email "you@example.com" // set your Git email
+
+git init // initialize a new Git repository in current folder
+
+git status // check the current status of repo
+git add . // add all modified & new files to staging area
+git add filename // add specific file to staging
+git commit -m "message" // commit staged changes with a message
+git commit -am "message" // add & commit tracked files in one shot
+
+git remote add origin <url> // link local repo to remote origin
+git remote -v // show remote URLs
+
+git push origin main // push changes to main branch
+git push -u origin main // push & set upstream for main
+git push // push to tracked upstream branch
+
+git pull origin main // pull latest changes from main branch
+git fetch // fetch remote changes (but don’t merge)
+
+git branch // list all branches
+git branch new-branch // create a new branch
+git checkout new-branch // switch to new branch
+git checkout -b new-branch // create and switch in one line
+git merge branch-name // merge given branch into current branch
+git branch -d branch-name // delete a local branch
+
+git clone <url> // clone remote repo to your machine
+
+git stash // temporarily store uncommitted changes
+git stash list // show list of stashes
+git stash pop // apply last stash and remove it
+
+git log // view commit history
+git log --oneline // compact commit history
+git diff // show changes not staged
+git diff --staged // show staged changes
+
+git checkout -- filename // discard changes in file
+git reset HEAD filename // unstage a staged file
+git reset --hard HEAD // remove all uncommitted changes
+git revert <commit> // undo a commit (safe way)
+
+git tag // list tags
+git tag v1.0 // create tag named v1.0
+git push origin v1.0 // push tag to remote
+
+git show <commit> // show details of a specific commit
+git blame filename // show who last modified each line
+git clean -fd // remove untracked files/directories
+

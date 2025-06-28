@@ -50,3 +50,19 @@ git show <commit> // show details of a specific commit
 git blame filename // show who last modified each line
 git clean -fd // remove untracked files/directories
 
+cat filename.txt // display entire content of the file
+head filename.txt // show the first 10 lines of the file
+tail filename.txt // show the last 10 lines of the file
+less filename.txt // view file one page at a time (press q to quit)
+
+echo "Hello World" > file.txt // create or overwrite file with "Hello World"
+echo "Another line" >> file.txt // add "Another line" to the end of file.txt
+
+rm file.txt // permanently delete file.txt
+rm -f file.txt // force delete without confirmation
+rm -r foldername // delete folder and contents recursively
+rm -rf foldername // force delete folder and everything in it
+
+touch file.txt // create a new empty file (or update last-modified time)
+mkdir foldername // create a new folder
+rmdir foldername // delete an empty folder
